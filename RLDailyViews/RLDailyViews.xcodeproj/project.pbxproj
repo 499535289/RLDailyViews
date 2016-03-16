@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		D0BC55D41C999E8E00EF2883 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC55D31C999E8E00EF2883 /* AppDelegate.m */; };
 		D0BC55D71C99A65A00EF2883 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC55D61C99A65A00EF2883 /* FirstViewController.m */; };
+		D0BC55DA1C99A9A800EF2883 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BC55D91C99A9A800EF2883 /* Images.xcassets */; };
 		D0FCBA681C979B12008A4C28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FCBA671C979B12008A4C28 /* main.m */; };
 		D0FCBA711C979B12008A4C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FCBA6F1C979B12008A4C28 /* Main.storyboard */; };
-		D0FCBA731C979B12008A4C28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FCBA721C979B12008A4C28 /* Images.xcassets */; };
 		D0FCBA761C979B12008A4C28 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0FCBA741C979B12008A4C28 /* LaunchScreen.xib */; };
 		D0FCBA821C979B13008A4C28 /* RLDailyViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FCBA811C979B13008A4C28 /* RLDailyViewsTests.m */; };
 /* End PBXBuildFile section */
@@ -31,11 +31,11 @@
 		D0BC55D31C999E8E00EF2883 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0BC55D51C99A65A00EF2883 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		D0BC55D61C99A65A00EF2883 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		D0BC55D91C99A9A800EF2883 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D0FCBA621C979B12008A4C28 /* RLDailyViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RLDailyViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FCBA661C979B12008A4C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FCBA671C979B12008A4C28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D0FCBA701C979B12008A4C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D0FCBA721C979B12008A4C28 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
 		D0FCBA751C979B12008A4C28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D0FCBA7B1C979B12008A4C28 /* RLDailyViewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RLDailyViewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FCBA801C979B13008A4C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,14 +86,6 @@
 			path = DetailPage;
 			sourceTree = "<group>";
 		};
-		D0BC55CF1C999D6400EF2883 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				D0FCBA721C979B12008A4C28 /* Images.xcassets */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		D0BC55D01C999E3000EF2883 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +100,14 @@
 				D0BC55D31C999E8E00EF2883 /* AppDelegate.m */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		D0BC55D81C99A9A800EF2883 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D0BC55D91C99A9A800EF2883 /* Images.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		D0FCBA591C979B12008A4C28 = {
@@ -131,8 +131,8 @@
 		D0FCBA641C979B12008A4C28 /* RLDailyViews */ = {
 			isa = PBXGroup;
 			children = (
+				D0BC55D81C99A9A800EF2883 /* Resource */,
 				D0BC55CC1C999D5300EF2883 /* Classes */,
-				D0BC55CF1C999D6400EF2883 /* Resources */,
 				D0BC55D11C999E8E00EF2883 /* AppDelegate */,
 				D0FCBA651C979B12008A4C28 /* Supporting Files */,
 			);
@@ -247,9 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BC55DA1C99A9A800EF2883 /* Images.xcassets in Resources */,
 				D0FCBA711C979B12008A4C28 /* Main.storyboard in Resources */,
 				D0FCBA761C979B12008A4C28 /* LaunchScreen.xib in Resources */,
-				D0FCBA731C979B12008A4C28 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
