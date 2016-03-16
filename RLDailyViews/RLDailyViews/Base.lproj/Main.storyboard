@@ -48,7 +48,7 @@
         <scene sceneID="h9S-vs-M6X">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W0J-Wo-h5b" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="每日精选" id="Tm7-iA-xev"/>
+                    <tabBarItem key="tabBarItem" title="每日精选" image="global_btn_love_normal" id="Tm7-iA-xev"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="O3m-6Y-m7P">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -67,7 +67,7 @@
         <scene sceneID="fnd-iu-E1h">
             <objects>
                 <navigationController id="5Sz-Ir-fJq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="主题" id="J1p-zj-iU7"/>
+                    <tabBarItem key="tabBarItem" title="主题" image="global_btn_love_big" id="J1p-zj-iU7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5vE-0G-dBl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -116,4 +116,8 @@
             <point key="canvasLocation" x="946" y="960"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="global_btn_love_big" width="35" height="32"/>
+        <image name="global_btn_love_normal" width="20" height="19"/>
+    </resources>
 </document>
