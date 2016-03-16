@@ -66,7 +66,6 @@
         <!--主题-->
         <scene sceneID="fnd-iu-E1h">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Scg-fy-2jk" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="5Sz-Ir-fJq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="主题" id="J1p-zj-iU7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5vE-0G-dBl">
@@ -77,6 +76,7 @@
                         <segue destination="iIk-y1-yCz" kind="relationship" relationship="rootViewController" id="aiC-lm-ufq"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Scg-fy-2jk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="522" y="955"/>
         </scene>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D0BC55D41C999E8E00EF2883 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC55D31C999E8E00EF2883 /* AppDelegate.m */; };
+		D0BC55D71C99A65A00EF2883 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC55D61C99A65A00EF2883 /* FirstViewController.m */; };
 		D0FCBA681C979B12008A4C28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FCBA671C979B12008A4C28 /* main.m */; };
 		D0FCBA711C979B12008A4C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FCBA6F1C979B12008A4C28 /* Main.storyboard */; };
 		D0FCBA731C979B12008A4C28 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0FCBA721C979B12008A4C28 /* Images.xcassets */; };
@@ -28,6 +29,8 @@
 /* Begin PBXFileReference section */
 		D0BC55D21C999E8E00EF2883 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0BC55D31C999E8E00EF2883 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D0BC55D51C99A65A00EF2883 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		D0BC55D61C99A65A00EF2883 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		D0FCBA621C979B12008A4C28 /* RLDailyViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RLDailyViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FCBA661C979B12008A4C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FCBA671C979B12008A4C28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 		D0BC55CD1C999D5300EF2883 /* DailyList */ = {
 			isa = PBXGroup;
 			children = (
+				D0BC55D51C99A65A00EF2883 /* FirstViewController.h */,
+				D0BC55D61C99A65A00EF2883 /* FirstViewController.m */,
 			);
 			path = DailyList;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0BC55D41C999E8E00EF2883 /* AppDelegate.m in Sources */,
+				D0BC55D71C99A65A00EF2883 /* FirstViewController.m in Sources */,
 				D0FCBA681C979B12008A4C28 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
