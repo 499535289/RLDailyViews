@@ -1,13 +1,13 @@
 //
-//  SecondViewController.h
+//  RLCustomTabBar.h
 //  RLDailyViews
 //
-//  Created by LiWei on 16/3/16.
+//  Created by LiWei on 16/3/17.
 //  Copyright © 2016年 LiWei. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface RLCustomTabBar : UITabBar
 
 @end

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9527.1" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="TfY-f8-1Im">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9527.1" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="W0J-Wo-h5b">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
     </dependencies>
     <scenes>
-        <!--每日推荐-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
@@ -18,37 +18,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.60000002384185791" green="0.60000002384185791" blue="0.60000002384185791" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="每日推荐" id="wi2-jA-zrc">
-                        <barButtonItem key="leftBarButtonItem" title="设置" id="yNG-qa-Sp6"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="wi2-jA-zrc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="948" y="331"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="yVo-DX-PBx">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="TfY-f8-1Im" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="3ii-7e-sOh">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="W0J-Wo-h5b" kind="relationship" relationship="viewControllers" id="fHW-qe-Ssa"/>
-                        <segue destination="5Sz-Ir-fJq" kind="relationship" relationship="viewControllers" id="naZ-nX-NSs"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="SRu-bg-diC" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="80" y="630"/>
-        </scene>
         <!--每日精选-->
         <scene sceneID="h9S-vs-M6X">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W0J-Wo-h5b" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="每日精选" image="global_btn_love_normal" id="Tm7-iA-xev"/>
+                <navigationController storyboardIdentifier="DailyListNav" automaticallyAdjustsScrollViewInsets="NO" id="W0J-Wo-h5b" customClass="RLCommonNavigation" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="每日精选" id="Tm7-iA-xev"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="O3m-6Y-m7P">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -66,8 +46,8 @@
         <!--主题-->
         <scene sceneID="fnd-iu-E1h">
             <objects>
-                <navigationController id="5Sz-Ir-fJq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="主题" image="global_btn_love_big" id="J1p-zj-iU7"/>
+                <navigationController storyboardIdentifier="SectionsNav" id="5Sz-Ir-fJq" customClass="RLCommonNavigation" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="主题" id="J1p-zj-iU7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5vE-0G-dBl">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -116,8 +96,4 @@
             <point key="canvasLocation" x="946" y="960"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="global_btn_love_big" width="35" height="32"/>
-        <image name="global_btn_love_normal" width="20" height="19"/>
-    </resources>
 </document>

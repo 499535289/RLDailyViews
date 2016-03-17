@@ -1,18 +1,18 @@
 //
-//  SecondViewController.m
+//  RLDetailPageController.m
 //  RLDailyViews
 //
-//  Created by LiWei on 16/3/16.
+//  Created by LiWei on 16/3/17.
 //  Copyright © 2016年 LiWei. All rights reserved.
 //
 
-#import "SecondViewController.h"
+#import "RLDetailPageController.h"
 
-@interface SecondViewController ()
+@interface RLDetailPageController ()
 
 @end
 
-@implementation SecondViewController
+@implementation RLDetailPageController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

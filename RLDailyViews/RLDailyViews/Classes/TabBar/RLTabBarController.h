@@ -1,13 +1,13 @@
 //
-//  ThirdViewController.h
+//  RLTabBarController.h
 //  RLDailyViews
 //
-//  Created by LiWei on 16/3/16.
+//  Created by LiWei on 16/3/17.
 //  Copyright © 2016年 LiWei. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ThirdViewController : UIViewController
+@interface RLTabBarController : UITabBarController
 
 @end

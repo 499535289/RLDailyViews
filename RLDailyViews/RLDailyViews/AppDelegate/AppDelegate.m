@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "RLTabBarController.h"
+#import "RLCommonNavigation.h"
 
 @interface AppDelegate ()
 
@@ -16,9 +18,24 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    
+    
+    RLTabBarController * tabBarController = [[RLTabBarController alloc]init];
+    
+    UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    RLCommonNavigation * nav1 = [storyBoard instantiateViewControllerWithIdentifier:@"DailyListNav"];
+    RLCommonNavigation * nav2 = [storyBoard instantiateViewControllerWithIdentifier:@"SectionsNav"];
+    
+    tabBarController.viewControllers = @[nav1,nav2];
+    
+    self.window.rootViewController = tabBarController;
+    
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
