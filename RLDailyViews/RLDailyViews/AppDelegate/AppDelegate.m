@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "RLTabBarController.h"
-#import "RLCommonNavigation.h"
+#import "NSObject+RLAppearance.h"
+
 
 @interface AppDelegate ()
 
@@ -19,19 +20,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+
     
-    
-    RLTabBarController * tabBarController = [[RLTabBarController alloc]init];
-    
-    UIStoryboard * storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    
-    RLCommonNavigation * nav1 = [storyBoard instantiateViewControllerWithIdentifier:@"DailyListNav"];
-    RLCommonNavigation * nav2 = [storyBoard instantiateViewControllerWithIdentifier:@"SectionsNav"];
-    
-    tabBarController.viewControllers = @[nav1,nav2];
-    
-    self.window.rootViewController = tabBarController;
+    [NSObject setAllAppearance];//全局设置
+
     
     return YES;
 }

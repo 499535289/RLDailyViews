@@ -10,4 +10,8 @@
 
 @interface RLCustomTabBar : UITabBar
 
+- (void)configureItems;
+
+
+
 @end

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		9F32786F51EE83767F3EBB01 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86453D725D458EC5ECDD45BA /* libPods.a */; };
+		D051F3C01C9FD53200BAAE0E /* 知乎1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D051F3BF1C9FD53200BAAE0E /* 知乎1.jpg */; };
+		D051F3C31C9FD66E00BAAE0E /* RLProfileView.m in Sources */ = {isa = PBXBuildFile; fileRef = D051F3C21C9FD66E00BAAE0E /* RLProfileView.m */; };
+		D051F3C51C9FDCD300BAAE0E /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = D051F3C41C9FDCD300BAAE0E /* Foundation+Log.m */; };
+		D051F3CB1C9FDD2500BAAE0E /* NSObject+RLAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = D051F3C81C9FDD2500BAAE0E /* NSObject+RLAppearance.m */; };
+		D051F3CC1C9FDD2500BAAE0E /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D051F3CA1C9FDD2500BAAE0E /* UIView+Extension.m */; };
+		D054A6E91C9BACE800716E70 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D054A6E81C9BACE800716E70 /* Launch Screen.storyboard */; };
 		D064ABFC1C9A583900229973 /* RLTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064ABFB1C9A583900229973 /* RLTabBarController.m */; };
 		D064ABFF1C9A8A6D00229973 /* RLDetailPageController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064ABFE1C9A8A6D00229973 /* RLDetailPageController.m */; };
 		D064AC021C9A8AA000229973 /* RLDailyListCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D064AC011C9A8AA000229973 /* RLDailyListCollection.m */; };
@@ -15,6 +21,7 @@
 		D064AC0C1C9AA35600229973 /* RLCustomTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D064AC0B1C9AA35600229973 /* RLCustomTabBar.m */; };
 		D0BC55D41C999E8E00EF2883 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0BC55D31C999E8E00EF2883 /* AppDelegate.m */; };
 		D0BC55DA1C99A9A800EF2883 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0BC55D91C99A9A800EF2883 /* Images.xcassets */; };
+		D0E913341C9EC2F400C83E7A /* icon_profile_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E913331C9EC2F400C83E7A /* icon_profile_normal@2x.png */; };
 		D0FCBA681C979B12008A4C28 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FCBA671C979B12008A4C28 /* main.m */; };
 		D0FCBA711C979B12008A4C28 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0FCBA6F1C979B12008A4C28 /* Main.storyboard */; };
 		D0FCBA821C979B13008A4C28 /* RLDailyViewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0FCBA811C979B13008A4C28 /* RLDailyViewsTests.m */; };
@@ -34,6 +41,19 @@
 		3313C8F6AE0F1EB6D8F1C286 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		4607DE83E039086883A61831 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		86453D725D458EC5ECDD45BA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D051F3BF1C9FD53200BAAE0E /* 知乎1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "知乎1.jpg"; sourceTree = "<group>"; };
+		D051F3C11C9FD66E00BAAE0E /* RLProfileView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLProfileView.h; sourceTree = "<group>"; };
+		D051F3C21C9FD66E00BAAE0E /* RLProfileView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLProfileView.m; sourceTree = "<group>"; };
+		D051F3C41C9FDCD300BAAE0E /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		D051F3C71C9FDD2500BAAE0E /* NSObject+RLAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+RLAppearance.h"; sourceTree = "<group>"; };
+		D051F3C81C9FDD2500BAAE0E /* NSObject+RLAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RLAppearance.m"; sourceTree = "<group>"; };
+		D051F3C91C9FDD2500BAAE0E /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		D051F3CA1C9FDD2500BAAE0E /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		D054A6E81C9BACE800716E70 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		D054A6F51C9BFF6500716E70 /* (arc:mrc)Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "(arc:mrc)Singleton.h"; sourceTree = "<group>"; };
+		D054A6F61C9BFF6500716E70 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D054A6F71C9BFF6500716E70 /* RLDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDefine.h; sourceTree = "<group>"; };
+		D054A6F81C9BFF6500716E70 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		D064ABFA1C9A583900229973 /* RLTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLTabBarController.h; sourceTree = "<group>"; };
 		D064ABFB1C9A583900229973 /* RLTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RLTabBarController.m; sourceTree = "<group>"; };
 		D064ABFD1C9A8A6D00229973 /* RLDetailPageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RLDetailPageController.h; sourceTree = "<group>"; };
@@ -47,6 +67,7 @@
 		D0BC55D21C999E8E00EF2883 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0BC55D31C999E8E00EF2883 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D0BC55D91C99A9A800EF2883 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0E913331C9EC2F400C83E7A /* icon_profile_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_profile_normal@2x.png"; sourceTree = "<group>"; };
 		D0FCBA621C979B12008A4C28 /* RLDailyViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RLDailyViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0FCBA661C979B12008A4C28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0FCBA671C979B12008A4C28 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +113,35 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D051F3C61C9FDD2500BAAE0E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D051F3C71C9FDD2500BAAE0E /* NSObject+RLAppearance.h */,
+				D051F3C81C9FDD2500BAAE0E /* NSObject+RLAppearance.m */,
+				D051F3C91C9FDD2500BAAE0E /* UIView+Extension.h */,
+				D051F3CA1C9FDD2500BAAE0E /* UIView+Extension.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		D051F3CD1C9FF06300BAAE0E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		D054A6F41C9BFF6500716E70 /* PCH */ = {
+			isa = PBXGroup;
+			children = (
+				D054A6F51C9BFF6500716E70 /* (arc:mrc)Singleton.h */,
+				D054A6F61C9BFF6500716E70 /* PrefixHeader.pch */,
+				D054A6F71C9BFF6500716E70 /* RLDefine.h */,
+				D054A6F81C9BFF6500716E70 /* Singleton.h */,
+			);
+			path = PCH;
+			sourceTree = "<group>";
+		};
 		D064ABF91C9A565C00229973 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +165,7 @@
 		D0BC55CC1C999D5300EF2883 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D051F3CD1C9FF06300BAAE0E /* Tools */,
 				D064ABF91C9A565C00229973 /* TabBar */,
 				D064AC031C9A953E00229973 /* Navigation */,
 				D0BC55EB1C99ABDC00EF2883 /* DetailPage */,
@@ -145,6 +196,7 @@
 		D0BC55D81C99A9A800EF2883 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				D0E913321C9EC2F400C83E7A /* Images */,
 				D0BC55D91C99A9A800EF2883 /* Images.xcassets */,
 			);
 			path = Resource;
@@ -162,13 +214,25 @@
 		D0BC55EE1C99ABDC00EF2883 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				D051F3C11C9FD66E00BAAE0E /* RLProfileView.h */,
+				D051F3C21C9FD66E00BAAE0E /* RLProfileView.m */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		D0E913321C9EC2F400C83E7A /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D0E913331C9EC2F400C83E7A /* icon_profile_normal@2x.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 		D0FCBA591C979B12008A4C28 = {
 			isa = PBXGroup;
 			children = (
+				D051F3C41C9FDCD300BAAE0E /* Foundation+Log.m */,
+				D051F3BF1C9FD53200BAAE0E /* 知乎1.jpg */,
 				D0FCBA641C979B12008A4C28 /* RLDailyViews */,
 				D0FCBA7E1C979B13008A4C28 /* RLDailyViewsTests */,
 				D0FCBA631C979B12008A4C28 /* Products */,
@@ -191,7 +255,9 @@
 			children = (
 				D0BC55D81C99A9A800EF2883 /* Resource */,
 				D0BC55CC1C999D5300EF2883 /* Classes */,
+				D051F3C61C9FDD2500BAAE0E /* Categories */,
 				D0BC55D11C999E8E00EF2883 /* AppDelegate */,
+				D054A6F41C9BFF6500716E70 /* PCH */,
 				D0FCBA651C979B12008A4C28 /* Supporting Files */,
 			);
 			path = RLDailyViews;
@@ -201,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				D0FCBA6F1C979B12008A4C28 /* Main.storyboard */,
+				D054A6E81C9BACE800716E70 /* Launch Screen.storyboard */,
 				D0FCBA661C979B12008A4C28 /* Info.plist */,
 				D0FCBA671C979B12008A4C28 /* main.m */,
 			);
@@ -308,7 +375,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E913341C9EC2F400C83E7A /* icon_profile_normal@2x.png in Resources */,
+				D051F3C01C9FD53200BAAE0E /* 知乎1.jpg in Resources */,
 				D0BC55DA1C99A9A800EF2883 /* Images.xcassets in Resources */,
+				D054A6E91C9BACE800716E70 /* Launch Screen.storyboard in Resources */,
 				D0FCBA711C979B12008A4C28 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,8 +446,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D064AC091C9A95BC00229973 /* RLCommonNavigation.m in Sources */,
+				D051F3CB1C9FDD2500BAAE0E /* NSObject+RLAppearance.m in Sources */,
+				D051F3C51C9FDCD300BAAE0E /* Foundation+Log.m in Sources */,
 				D064AC021C9A8AA000229973 /* RLDailyListCollection.m in Sources */,
 				D064AC0C1C9AA35600229973 /* RLCustomTabBar.m in Sources */,
+				D051F3C31C9FD66E00BAAE0E /* RLProfileView.m in Sources */,
+				D051F3CC1C9FDD2500BAAE0E /* UIView+Extension.m in Sources */,
 				D0BC55D41C999E8E00EF2883 /* AppDelegate.m in Sources */,
 				D064ABFF1C9A8A6D00229973 /* RLDetailPageController.m in Sources */,
 				D064ABFC1C9A583900229973 /* RLTabBarController.m in Sources */,
@@ -502,8 +576,9 @@
 			baseConfigurationReference = 4607DE83E039086883A61831 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RLDailyViews/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = RLDailyViews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -514,8 +589,9 @@
 			baseConfigurationReference = 3313C8F6AE0F1EB6D8F1C286 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/RLDailyViews/PCH/PrefixHeader.pch";
 				INFOPLIST_FILE = RLDailyViews/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

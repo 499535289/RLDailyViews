@@ -7,6 +7,7 @@
 //
 
 #import "RLTabBarController.h"
+#import "RLCommonNavigation.h"
 #import "RLCustomTabBar.h"
 
 @interface RLTabBarController ()<UITabBarControllerDelegate>
@@ -18,27 +19,36 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self setChildViewControllers];
+    
+    [self setUpCustomTabBar];
+    
     self.delegate = self;
+    
+}
+
+- (void)setChildViewControllers{
+    
+    RLCommonNavigation * dailyListNav = VC_STORYBOARDID(@"DailyListNav");
+    RLCommonNavigation * hotListNav = VC_STORYBOARDID(@"HotListNav");
+    RLCommonNavigation * themesNav = VC_STORYBOARDID(@"ThemesNav");
+    
+    self.viewControllers = @[dailyListNav,hotListNav,themesNav];
+    
+}
+
+
+- (void)setUpCustomTabBar{
     
     RLCustomTabBar *customTabBar = [[RLCustomTabBar alloc]initWithFrame:CGRectMake(self.tabBar.frame.origin.x, self.tabBar.frame.origin.y+10, self.tabBar.frame.size.width, self.tabBar.frame.size.height-10)];
     
-
+    customTabBar.items = self.tabBar.items;
+    
+    [customTabBar configureItems];
+    
     [self.view addSubview:customTabBar];
     
     [self.tabBar removeFromSuperview];
-    
-//    self.tabBar.frame = CGRectMake(0, 0, 200, 20);
-    
-//    UILabel * label1 = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 30, 20)];
-//    UILabel * label2 = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 30, 20)];
-//    
-//    label1.text = @"标签1";
-//    label2.text = @"22";
-//    
-//    UIBarButtonItem *item1 = [[UIBarButtonItem alloc]initWithCustomView:label1];
-//    UIBarButtonItem *item2 = [[UIBarButtonItem alloc]initWithCustomView:label2];
-//    
-//    [self.tabBar setItems:@[item1,item2]];
     
     
 }
@@ -55,30 +65,19 @@
     //[viewController.view removeFromSuperview];
     //[UIView commitAnimations];
     CATransition *animation =[CATransition animation];
-    [animation setDuration:0.75f];
+    [animation setDuration:0.5f];
     [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionDefault]];
 //    [animation setType:kCATransitionMoveIn];
 //    [animation setSubtype:kCATransitionFromRight];
     [tabBarController.view.layer addAnimation:animation forKey:@"reveal"];
     
-    NSLog(@"shouldSelect");
+    
+    
+    
     return YES;
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
