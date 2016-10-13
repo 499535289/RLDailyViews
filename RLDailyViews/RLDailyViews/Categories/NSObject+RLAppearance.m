@@ -16,11 +16,14 @@
     NSDictionary *selectedTextDic = @{NSForegroundColorAttributeName:[UIColor blackColor]};
     [[UITabBarItem appearance] setTitleTextAttributes:selectedTextDic forState:UIControlStateSelected];
     
-    NSDictionary *normalTextDic = @{NSFontAttributeName:[UIFont systemFontOfSize:14.f]};
+    NSDictionary *normalTextDic = @{NSFontAttributeName:[UIFont systemFontOfSize:14]};
     [[UITabBarItem appearance] setTitleTextAttributes:normalTextDic forState:UIControlStateNormal];
     
-    
-    
+    //title
+    [UINavigationBar appearance].titleTextAttributes = @{NSFontAttributeName:[UIFont fontWithName:@"ChalkboardSE-Bold" size:Scale_float(15)]};
+    [UINavigationBar appearance].tintColor = [UIColor blackColor];
+    //naviBar的uibarbutton
+    [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont fontWithName:@"ChalkboardSE-Bold" size:Scale_float(13)]} forState:UIControlStateNormal];
 }
 
 

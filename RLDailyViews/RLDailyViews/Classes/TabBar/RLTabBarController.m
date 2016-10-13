@@ -8,7 +8,6 @@
 
 #import "RLTabBarController.h"
 #import "RLCommonNavigation.h"
-#import "RLCustomTabBar.h"
 
 @interface RLTabBarController ()<UITabBarControllerDelegate>
 
@@ -21,37 +20,48 @@
     
     [self setChildViewControllers];
     
-    [self setUpCustomTabBar];
-    
     self.delegate = self;
     
 }
 
 - (void)setChildViewControllers{
     
-    RLCommonNavigation * dailyListNav = VC_STORYBOARDID(@"DailyListNav");
+//    RLCommonNavigation * dailyListNav = VC_STORYBOARDID(@"DailyListNav");
     RLCommonNavigation * hotListNav = VC_STORYBOARDID(@"HotListNav");
-    RLCommonNavigation * themesNav = VC_STORYBOARDID(@"ThemesNav");
+    RLCommonNavigation * dailyNewsNav = VC_STORYBOARDID(@"DailyNewsNav");
+    RLCommonNavigation * kaiyanNav = VC_STORYBOARDID(@"KaiyanNav");
     
-    self.viewControllers = @[dailyListNav,hotListNav,themesNav];
+    self.viewControllers = @[kaiyanNav,dailyNewsNav,hotListNav];
     
+    [self configureItems];
+
 }
 
 
-- (void)setUpCustomTabBar{
+
+- (void)configureItems{
     
-    RLCustomTabBar *customTabBar = [[RLCustomTabBar alloc]initWithFrame:CGRectMake(self.tabBar.frame.origin.x, self.tabBar.frame.origin.y+10, self.tabBar.frame.size.width, self.tabBar.frame.size.height-10)];
+    int i = 0;
     
-    customTabBar.items = self.tabBar.items;
-    
-    [customTabBar configureItems];
-    
-    [self.view addSubview:customTabBar];
-    
-    [self.tabBar removeFromSuperview];
-    
-    
+    for (UITabBarItem *item in self.tabBar.items) {
+        
+        if (0 == i) {
+            item.title = @"精选视频";
+        }else if (1 == i){
+            item.title = @"精选日报";
+        }else if (2 == i){
+            item.title = @"热门话题";
+        }
+        
+        item.titlePositionAdjustment = UIOffsetMake(0, -15);
+        
+        
+        i ++;
+        
+    }
+
 }
+
 
 
 - (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController*)viewController

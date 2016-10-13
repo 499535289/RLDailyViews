@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RLBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zja-FF-Fsx" customClass="RLBottomView">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="brd-mH-9rG">
+                            <rect key="frame" x="8" y="11" width="51" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="Iiq-vC-Zyj"/>
+                                <constraint firstAttribute="width" constant="51" id="fzY-FY-3gc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                            <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                            <state key="normal" title="....." image="favorite_20x19.png"/>
+                            <state key="selected" image="favorite_selected_20x19.png"/>
+                            <connections>
+                                <action selector="clickPopularityBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="9Va-dD-XVU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3s-DM-CPq">
+                            <rect key="frame" x="134.5" y="11" width="51" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="51" id="DQx-Ye-UF5"/>
+                                <constraint firstAttribute="height" constant="22" id="a09-XW-1JF"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                            <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                            <state key="normal" title="....." image="comment_20x19.png"/>
+                            <connections>
+                                <action selector="clickLongCommentsBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="vSZ-aS-lF6"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSf-VD-IrO">
+                            <rect key="frame" x="67" y="11" width="59.5" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="4KD-4O-bV6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                            <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                            <state key="normal" title="....." image="comment_20x19.png"/>
+                            <connections>
+                                <action selector="clickShortCommentsBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="yO8-dm-eod"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sA9-Cb-WDl">
+                            <rect key="frame" x="261" y="11" width="51" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="C23-bp-aQz"/>
+                                <constraint firstAttribute="width" constant="51" id="ZDs-td-rgl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                            <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                            <state key="normal" title="分享" image="upload_20x19.png"/>
+                            <connections>
+                                <action selector="clickShareBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="UhP-w4-x0e"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v21-1T-k2y">
+                            <rect key="frame" x="193" y="11" width="59.5" height="22"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="22" id="Ptc-EC-jff"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                            <inset key="titleEdgeInsets" minX="3" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="3" maxY="0.0"/>
+                            <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                            <state key="normal" title="收藏" image="collection_20x19.png"/>
+                            <state key="selected" title="已收藏" image="collection_selected_20x19.png"/>
+                            <connections>
+                                <action selector="clickCollectBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Den-cs-mfb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="sA9-Cb-WDl" firstAttribute="leading" secondItem="v21-1T-k2y" secondAttribute="trailing" constant="8" id="41z-Og-bjt"/>
+                        <constraint firstItem="w3s-DM-CPq" firstAttribute="centerX" secondItem="zja-FF-Fsx" secondAttribute="centerX" id="72F-5q-zag"/>
+                        <constraint firstItem="brd-mH-9rG" firstAttribute="top" secondItem="zja-FF-Fsx" secondAttribute="top" constant="11" id="9WW-HP-Tvm"/>
+                        <constraint firstItem="KSf-VD-IrO" firstAttribute="leading" secondItem="brd-mH-9rG" secondAttribute="trailing" constant="8" id="BLb-aa-Pqp"/>
+                        <constraint firstItem="sA9-Cb-WDl" firstAttribute="top" secondItem="zja-FF-Fsx" secondAttribute="top" constant="11" id="CFz-wZ-eB7"/>
+                        <constraint firstAttribute="trailing" secondItem="sA9-Cb-WDl" secondAttribute="trailing" constant="8" id="HNJ-XW-DUC"/>
+                        <constraint firstItem="brd-mH-9rG" firstAttribute="leading" secondItem="zja-FF-Fsx" secondAttribute="leading" constant="8" id="IOV-fR-dfy"/>
+                        <constraint firstItem="KSf-VD-IrO" firstAttribute="centerY" secondItem="brd-mH-9rG" secondAttribute="centerY" id="SB2-JA-kQB"/>
+                        <constraint firstItem="v21-1T-k2y" firstAttribute="leading" secondItem="w3s-DM-CPq" secondAttribute="trailing" constant="8" id="ZfB-0a-fBS"/>
+                        <constraint firstItem="v21-1T-k2y" firstAttribute="centerY" secondItem="brd-mH-9rG" secondAttribute="centerY" id="cYb-BP-ne3"/>
+                        <constraint firstItem="sA9-Cb-WDl" firstAttribute="centerY" secondItem="brd-mH-9rG" secondAttribute="centerY" id="fSu-Ls-Mh4"/>
+                        <constraint firstItem="w3s-DM-CPq" firstAttribute="centerY" secondItem="brd-mH-9rG" secondAttribute="centerY" id="lIv-QD-SZu"/>
+                        <constraint firstItem="w3s-DM-CPq" firstAttribute="leading" secondItem="KSf-VD-IrO" secondAttribute="trailing" constant="8" id="qGH-tI-1U8"/>
+                        <constraint firstAttribute="bottom" secondItem="brd-mH-9rG" secondAttribute="bottom" constant="11" id="tE8-dH-wyM"/>
+                        <constraint firstAttribute="bottom" secondItem="sA9-Cb-WDl" secondAttribute="bottom" constant="11" id="tYJ-Ih-YdV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="zja-FF-Fsx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BvD-G9-X7v"/>
+                <constraint firstAttribute="bottom" secondItem="zja-FF-Fsx" secondAttribute="bottom" id="CRq-Mi-NHW"/>
+                <constraint firstAttribute="trailing" secondItem="zja-FF-Fsx" secondAttribute="trailing" id="aze-Qg-8Iq"/>
+                <constraint firstItem="zja-FF-Fsx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="yUn-tG-V2C"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="longCommentsBtn" destination="w3s-DM-CPq" id="YAH-Mu-GZ2"/>
+                <outlet property="popularityBtn" destination="brd-mH-9rG" id="Akp-or-YYe"/>
+                <outlet property="shortCommentsBtn" destination="KSf-VD-IrO" id="FK6-aa-fSF"/>
+            </connections>
+            <point key="canvasLocation" x="289" y="124"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="collection_20x19.png" width="20" height="19"/>
+        <image name="collection_selected_20x19.png" width="20" height="19"/>
+        <image name="comment_20x19.png" width="20" height="19"/>
+        <image name="favorite_20x19.png" width="20" height="19"/>
+        <image name="favorite_selected_20x19.png" width="20" height="19"/>
+        <image name="upload_20x19.png" width="20" height="19"/>
+    </resources>
+</document>

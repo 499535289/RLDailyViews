@@ -7,92 +7,73 @@
 //
 
 #import "RLCommonNavigation.h"
-#import "RLProfileView.h"
+#import "RLProfileViewController.h"
+#import "RLProfileNavi.h"
 #import "UIView+Extension.h"
+#import "RLKaiYanVideoTableVC.h"
+#import "RLDailyNewsController.h"
+#import "RLHotNewsController.h"
 
+//@class RLKaiYanVideoTableVC,RLDailyNewsController,RLHotNewsController;
 @interface RLCommonNavigation ()<UINavigationControllerDelegate>
 @property (strong,nonatomic) UIImageView * profileImage;
 @property (nonatomic,getter=isUnfolded) BOOL unfolded;//展开
-
-@property (strong,nonatomic) RLProfileView * profileView;
 
 @end
 
 @implementation RLCommonNavigation
 - (UIImageView *)profileImage{
     if (!_profileImage) {
-        _profileImage = [[UIImageView alloc]initWithImage:IMAGE(@"icon_profile_normal@2x.png")];
+        _profileImage = [[UIImageView alloc]initWithImage:IMAGE(@"Action_Menu@3x.png")];
         _profileImage.userInteractionEnabled = YES;
         
-        [_profileImage addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickBack:)]];
+        [_profileImage addGestureRecognizer:[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(clickProfile:)]];
         
     }
-    
     return _profileImage;
 }
-
-- (RLProfileView *)profileView{
-    
-    
-    if (!_profileView) {
-        
-        UIBlurEffect *blur = [UIBlurEffect effectWithStyle:UIBlurEffectStyleLight];
-        _profileView = [[RLProfileView alloc]initWithEffect:blur];
-        
-        _profileView.frame = CGRectMake(0, (self.navigationBar.height + StatusBar_HEIGHT), SCREEN_WIDTH, 0);
-
-    }
-    
-    return _profileView;
-}
-
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.navigationBar.topItem.title = @"每日观点";//顶部固定不变的title
-    
+    UILabel *topTitleLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 100, Scale_float(35))];
+    topTitleLabel.text = @"view world";
+    topTitleLabel.textAlignment = NSTextAlignmentCenter;
+    topTitleLabel.font = [UIFont fontWithName:@"ChalkboardSE-Bold" size:Scale_float(16)];
+    self.navigationBar.topItem.titleView = topTitleLabel;//顶部固定不变的title
+    self.navigationBar.barTintColor = [UIColor whiteColor];
     self.delegate = self;
-    
-    
-    
 }
 
-- (void)clickBack:(id)sender{
-    DLog(@"click");
+- (BOOL)shouldAutorotate{
+    return NO;
+}
+
+- (void)clickProfile:(id)sender{
+    
+    RLProfileViewController *profileVC = [[RLProfileViewController alloc]init];
+    RLProfileNavi *profileNavi = [[RLProfileNavi alloc]initWithRootViewController:profileVC];
+    profileVC.title = @"个人中心";
+    [self presentViewController:profileNavi animated:YES completion:nil];
     
     [self rotationAnimation];
-
 }
 
 - (void)rotationAnimation{
-
+    DLog(@"animate");
     //navigationBar 左侧图片按钮动画
-    [UIView animateWithDuration:0.5f animations:^{
-        if (_unfolded) {
-            
-            self.profileImage.transform = CGAffineTransformIdentity;//还原
-            
-            self.profileView.height = 0;
-            
-        }else{
-            
-            self.profileImage.transform = CGAffineTransformRotate(self.profileImage.transform, M_PI_2);//右选择90°
-            
-            self.profileView.height = SCREEN_HEIGHT - self.navigationBar.height - StatusBar_HEIGHT;;
-            
-        }
-        
+    [UIView animateWithDuration:0.25f animations:^{
+        self.profileImage.transform = CGAffineTransformRotate(self.profileImage.transform, -M_PI_2);//左选转90°
     } completion:^(BOOL finished) {
         if (finished) {
-            _unfolded = !_unfolded;
+            [UIView animateWithDuration:0.25f animations:^{
+                self.profileImage.transform = CGAffineTransformIdentity;
+            } completion:^(BOOL finished) {
+                
+            }];
         }
-        
     }];
-    
-    
-    
 }
 
 
@@ -102,19 +83,22 @@
         
         viewController.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:self.profileImage];//左上角profileImage
     }
-    
-    if (!_profileView) {
-        [[UIApplication sharedApplication].keyWindow addSubview:self.profileView];//毛玻璃试图
+
+    if (![viewController isKindOfClass:[RLKaiYanVideoTableVC class]] && ![viewController isKindOfClass:[RLDailyNewsController class]] && ![viewController isKindOfClass:[RLHotNewsController class]]) {
+        
+        //自定义backBarButtonItem
+        _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _backBtn.frame = CGRectMake(0, 0, 44, 44);
+        [_backBtn addTarget:self action:@selector(clickBackToPreVC) forControlEvents:UIControlEventTouchUpInside];
+        [_backBtn setBackgroundImage:IMAGE(@"Action_Back.png") forState:UIControlStateNormal];
+        UIBarButtonItem *backItem = [[UIBarButtonItem alloc]initWithCustomView:_backBtn];
+        viewController.navigationItem.leftBarButtonItem = backItem;
     }
     
 }
 
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)clickBackToPreVC{
+    [self popViewControllerAnimated:YES];
 }
 
 

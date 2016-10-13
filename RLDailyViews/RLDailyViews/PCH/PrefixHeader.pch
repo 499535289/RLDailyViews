@@ -6,6 +6,9 @@
 //  Copyright © 2016年 LiWei. All rights reserved.
 //
 
+#import "UIView+Extension.h"
+
+
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
@@ -30,6 +33,17 @@
 #endif
 
 
+//------------------UMENG APP------------------
+#define UMAppKey         @"57664d1ee0f55a1961003ed6"
+#define Wechat_AppId     @"wx22d1258f7ff92381"
+#define Wechat_AppSecret @"0353a3f3a3c3b4989be92275355cbac1"
+//------------------
+
+
+//------------------FontStyle-------------------
+//#define RLFONT(float)    [UIFont fontWithName:@"Baskerville-BoldItalic" size:float]
+
+
 //-------------------storyboard------------------------
 
 #define STORYBOARD  [UIStoryboard storyboardWithName:@"Main" bundle:nil]
@@ -47,13 +61,15 @@
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
 #define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
 
+#define Scale_float(a)  (SCREEN_WIDTH*(a))/375.0
+
 //-------------------获取设备大小-------------------------
 
 
 //-------------------打印日志-------------------------
 //DEBUG  模式下打印日志,当前行
 #ifdef DEBUG
-#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
 #else
 #   define DLog(...)
 #endif
@@ -223,7 +239,7 @@ do {                                                                      \
 
 // 获取RGB颜色
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
-#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+//#define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
 //背景色
 #define BACKGROUND_COLOR [UIColor colorWithRed:242.0/255.0 green:236.0/255.0 blue:231.0/255.0 alpha:1.0]
@@ -266,6 +282,9 @@ do {                                                                      \
 //由角度获取弧度 有弧度获取角度
 #define degreesToRadian(x) (M_PI * (x) / 180.0)
 #define radianToDegrees(radian) (radian*180.0)/(M_PI)
+
+//block内部weakself
+#define weakSelf(a) __unsafe_unretained __typeof(self) a = self
 
 
 

@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface RLCommonNavigation : UINavigationController
+@property (nonatomic,strong) UIButton *backBtn;
 
 @end
